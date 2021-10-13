@@ -1,0 +1,145 @@
+  /* --------------------------Código usado no mobile no no desktop------------------------*/
+
+body{
+  background-color: black;
+}
+
+
+.seleciona{
+  color: rgb(219, 219, 219);
+  border-style: solid;
+  border-radius: 15px;
+  border-color: blue;
+  text-align: center;
+  font-size: 20px; 
+}
+
+.seleciona:hover{/*BRILHO*/
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+} 
+
+.container input {/*BOTÃO*/
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  background-image:none;
+}
+
+     /*aparecer tabela*/
+     .formY{
+      align-self: center;
+     }
+
+     #divimg2{
+      display: none; 
+      }  
+        /*Textos sobre o preço*/
+  #anuncio{
+    color: rgb(81, 69, 253);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 10%;
+  }  
+
+  #cond{
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+    font-size: 25px;
+    text-align: center;
+  }
+  #nume{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+    font-size: 65px;
+    text-align: center;
+
+  }
+         /*fim tabela*/
+
+
+  /* --------------------------Modo Mobile------------------------*/
+@media screen and (max-width: 1300px){
+.TEXTO{ 
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+/*Alterado*/
+    font-size: 25px;
+  }
+
+
+.container {
+    /*Alterado*/
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .logo{
+    width:100%;
+  }
+
+  /* Fim da Customização*/
+
+/* Textos*/
+#anuncio{
+  font-size: 45px;
+}  
+
+#cond{
+  color: aliceblue;
+  font-size: 20px;
+}
+#nume{
+  font-size: 45px;
+}
+/* Fim dos textos*/
+}
+
+  /* --------------------------Modo Desktop------------------------*/
+@media screen and (min-width: 1300px){
+  .TEXTO{
+
+      color: rgb(255, 255, 255);
+      border-right-style: solid;
+      border-right-width: 2px;
+      border-right-color: blue;
+      float: left;
+      width: 40%;
+      font-size: 35px;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+    }
+
+
+
+  
+  
+  .container {
+      width: 50%;
+      display: block;
+      position: relative;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }  
+  
+    .logo{
+      width:650px;
+    }
+  
+    /* Fim da Customização*/
+  }
+
+
+/* Natan Mafra Torres 2020*/

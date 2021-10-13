@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+.Texto{
+  
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+/*Alterado*/
+    font-size: 25px;
+  }
+  .Formulario{
+      padding-left: 30px;
+      margin-top: 5px;  
+      width: 80%;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+    font-size: 25px;
+  }
+  .pedido{
+    font-size: 25px;
+    width: 100%;
+    height: 90px;
+    color: rgb(0, 26, 255);
+    background-color: black;
+    border-radius: 15px;
+    border-color: blue;
+    border-style: solid;
+    font-family: sans-serif;
+    text-align: center;
+    row-gap: 5;
+    
+}
+
+.data{
+    font-size: 25px;
+    width: 230px;
+    height: 30px;
+    color: rgb(0, 26, 255);
+    background-color: black;
+    border-radius: 15px;
+    border-color: blue;
+    border-style: solid;
+    font-family: sans-serif;
+    text-align: center;
+    row-gap: 5;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.lado{
+    float: right;
+}  
+.textinho{
+    font-size: 18px;
+    color: rgb(55, 75, 253);
+    font-family: sans-serif;
+    text-align: center;
+}
+.botao{
+        color: rgb(219, 219, 219);
+        border-style: solid;
+        border-radius: 15px;
+        border-color: blue;
+        text-align: center;
+        font-size: 30px; 
+        background-color: black;
+      }
+      
+      .botao:hover{/*BRILHO*/
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+        box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+      } 
+  .Termos{
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    color: rgb(219, 219, 219);
+    border-style: solid;
+    border-radius: 15px;
+    border-color: blue;
+    text-align: center;
+    font-size: 30px; 
+    background-color: rgb(1, 12, 75);
+  }  
+  .Imgcoloca{
+    width: 100px;
+    height: 100px;
+    background-image: url(clique.png);/*Troca essa coisa Carlos*/
+    border-radius: 15px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+  }
+  .Imgcoloca:hover{/*BRILHO*/
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+  }
+

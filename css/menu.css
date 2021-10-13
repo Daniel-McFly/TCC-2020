@@ -1,0 +1,223 @@
+@media screen and (min-width: 1300px){
+
+.bodyA
+{
+    background-color: black;
+    margin: 0;
+}
+
+div#interface
+{
+    height: 650px;
+    margin: 1px auto 80px auto;
+}
+
+.logoo
+{
+    margin-top: -3px;
+    width:130px;
+    height:100%;
+    float:left;
+    display: block;
+    margin-right: 80px;
+}
+
+
+.PAGINAA
+{
+	position: RELATIVE;
+    display: inline-block;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+	font-size: 38px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+    color: black;
+    text-shadow: -1px 0 rgb(105, 0, 153), 0 1px rgb(121, 0, 177), 1px 0 rgb(142, 5, 206), 0 -1px rgb(174, 0, 255);
+}
+
+.PAGINAA:nth-child(1)
+{
+	filter: hue-rotate(290deg);
+}
+
+.PAGINAA:nth-child(3)
+{
+	filter: hue-rotate(110deg);
+}
+
+.PAGINAA:hover{
+	background: #7f00e6;
+	color: #000000;
+    box-shadow: 0 0 5px rgb(99, 2, 155), 0 0 10px rgb(99, 2, 155), 0 0 20px rgb(78, 107, 160);
+}
+
+.PAGINAA span{
+	position: absolute;
+	display: block;
+}
+
+.PAGINAA span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #480083);
+	animation: animate1 1s linear infinite;
+}
+
+
+@keyframes animate1 
+{
+	0%
+	{
+		left: -100%;
+	}
+	50%,100%
+	{
+		left: 100%;
+	}
+}
+
+.PAGINAA span:nth-child(3){
+	bottom: 0;
+	right: -100%; 
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #3b006b);
+	animation: animate3 1s linear infinite;
+}
+
+@keyframes animate3
+{
+	0%
+	{
+		left: -100%;
+	}
+	50%,100%
+	{
+		left: 100%;
+	}
+}
+
+.barra-pesquisaA
+{
+    position: relative;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    text-align: center;
+    border:none;
+    border-radius: 20px;
+    width: 20%;
+    height: 70%;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-image:  url(../img/Lupa_menor.jpg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 10%;
+    background-position-y: 40%;
+    margin-left: 80px;
+}
+
+.icone-loginA
+{
+    position: relative;
+    right: 0px;
+    float: right;
+    height:100%;
+    margin-top: -9px;
+}
+
+.menuA
+{
+    position: fixed;
+    right: 0;
+    text-transform: uppercase;
+    width: 100%;
+    height: 55px;
+    background: black;
+    font-family: 'Arial';
+    z-index: 8;    
+}
+
+.menuA ul 
+{
+    list-style: none;
+    position: relative;
+}
+
+.menuA ul li 
+{
+    float: left;
+}
+
+.menuA ul ul
+{
+    display: none;
+}
+
+.linha_azul 
+{   
+    background-color: #069;
+    width: 100%;
+    height: 4px;
+}
+
+
+
+
+.login
+{
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.596);
+}
+
+
+
+
+
+
+
+.login
+{
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    border: none ;
+    height: 30px;
+    border: 1px solid #069;
+    width: 300px;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.493);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+.input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+.input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+}
+@media screen and (max-width: 1300px){
+    .menuA{
+        display: none;
+    }
+    .logoo{
+        display: none;
+    }
+}

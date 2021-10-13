@@ -1,0 +1,134 @@
+
+
+.logo
+{
+    padding:4px;
+    width:130px;
+    height:40px;
+    float:left;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.links
+{
+    background-color: #222;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+
+.menu 
+{
+    margin-top: 2px;
+    width: 100%;
+    height: 50px;
+    background: #222;
+    font-family: 'Arial';    
+    position: fixed;
+    z-index: 40;
+    text-decoration: none;
+}
+
+.menu ul 
+{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li 
+{
+    width: 150px;
+    float: left;
+}
+
+.menu a:hover 
+{
+    background-color: #069;
+    color: black;
+    text-decoration: none;
+}
+
+.menu ul ul 
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul 
+{
+    visibility: visible;
+    text-decoration: none;
+}
+
+label[for="bt_menu"] 
+{
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+#bt_menu 
+{
+    display: none;
+}
+
+@media (max-width: 800px) 
+{
+    label[for="bt_menu"] {
+    display: block;
+}
+
+#bt_menu:checked ~ .menu 
+{
+    margin-left: 0;
+}
+}
+
+.linha_azul 
+{
+    width: 100%;
+    height: 10px;
+    background: #069;
+}
+
+.rodape
+{
+    text-align:center; 
+    float:center; 
+    height:50px; 
+    color:#069; 
+    position:absolute; 
+    background-color:#222;
+    bottom:0; 
+    width:100%;
+    border-bottom: solid 5px #069;
+}
+.borda{
+    border-style: solid;
+    border-color: darkblue;
+    border-radius: 35%;
+    width: 10%;
+    height: 70%;
+    float:right ;
+    color: black;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-image:  url(img/lupa.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 90%;
+    background-position-y: 40%;
+}

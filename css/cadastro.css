@@ -1,0 +1,333 @@
+@charset "UTF-8";
+/*A regra @charset especifica a codificação de caracteres utilizada na folha de estilo.*/
+/*MOBILE*/
+@media screen and (max-width: 768px){
+
+}
+
+/*PC*/
+@media screen and (min-width: 768px){
+* 
+{
+    background-color: black;
+    margin: 0;
+}
+
+div#interface
+{
+    height: 100%;
+
+    min-height: 100%;
+    position: relative;
+}
+
+.logo
+{
+    margin-top: -3px;
+    width:130px;
+    height:100%;
+    float:left;
+    display: block;
+    margin-right: 80px;
+}
+
+
+.PAGINA
+{
+	position: RELATIVE;
+    display: inline-block;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+	font-size: 38px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+    color: black;
+    text-shadow: -1px 0 rgb(105, 0, 153), 0 1px rgb(121, 0, 177), 1px 0 rgb(142, 5, 206), 0 -1px rgb(174, 0, 255);
+}
+
+.PAGINA:nth-child(1)
+{
+	filter: hue-rotate(290deg);
+}
+
+.PAGINA:nth-child(3)
+{
+	filter: hue-rotate(110deg);
+}
+
+.PAGINA:hover{
+	background: #7f00e6;
+	color: #000000;
+    box-shadow: 0 0 5px rgb(99, 2, 155), 0 0 10px rgb(99, 2, 155), 0 0 20px rgb(78, 107, 160);
+}
+
+.PAGINA span{
+	position: absolute;
+	display: block;
+}
+
+.PAGINA span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #480083);
+	animation: animate1 1s linear infinite;
+}
+
+
+@keyframes animate1 
+{
+	0%
+	{
+		left: -100%;
+	}
+	50%,100%
+	{
+		left: 100%;
+	}
+}
+
+.PAGINA span:nth-child(3){
+	bottom: 0;
+	right: -100%; 
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #3b006b);
+	animation: animate3 1s linear infinite;
+}
+
+@keyframes animate3
+{
+	0%
+	{
+		left: -100%;
+	}
+	50%,100%
+	{
+		left: 100%;
+	}
+}
+
+.barra-pesquisa
+{
+    position: relative;
+    margin-top: 6px;
+    text-align: center;
+    border:none;
+    border-radius: 20px;
+    width: 20%;
+    height: 70%;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-image:  url(../img/Lupa_menor.jpg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 10%;
+    background-position-y: 40%;
+    margin-left: 80px;
+}
+
+.icone-login
+{
+    position: relative;
+    right: 0px;
+    float: right;
+    height:100%;
+}
+
+.menu 
+{
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    background: black;
+    font-family: 'Arial';    
+}
+
+.menu ul 
+{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li 
+{
+    float: left;
+}
+
+.menu ul ul
+{
+    display: none;
+}
+
+.linha_azul 
+{   
+    background-color: #069;
+    width: 100%;
+    height: 4px;
+}
+
+h1
+{ 
+    text-align: center;
+    color: black;
+    text-shadow: -1px 0 #069, 0 1px #069, 1px 0 #069, 0 -1px #069;
+    margin-right: center;
+
+}
+
+label 
+{   
+    font-size: 25px;
+    color: black;
+    text-shadow: -1px 0 #069, 0 1px #069, 1px 0 #069, 0 -1px #069;
+    background-color: transparent;
+}
+.login
+{
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.596);
+}
+
+
+.container
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*alltura do rodapé tem que ser igual a isso aqui e vice-versa*/
+    padding-bottom: 50px;
+}
+
+FORM
+{
+    align-items: center;
+    margin-top: 25px;  
+    color:white;
+    box-sizing: border-box;
+    padding: 35px;
+    width: 520px;
+    height: 100%;
+    border: 1px solid #069;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.493);
+    border-radius: 30%;
+    margin-bottom: 25px;
+}
+
+.titulo 
+{
+    text-align: center;
+    color: black;
+    text-shadow: -1px 0 #069, 0 1px #069, 1px 0 #069, 0 -1px #069;
+    margin-right: center;
+    background: none;
+}
+
+.login
+{
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    border: none ;
+    height: 30px;
+    border: 1px solid #069;
+    width: 300px;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.493);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+FORM > LABEL, FORM > INPUT
+{
+    text-align: center;
+    
+    display:inline-flexbox;
+}
+
+BUTTON
+{
+    /*margin-top: 35px;
+    margin-left: 100px ;*/
+    float: center;
+    padding: 5px 15px;
+    background-color: black;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #069;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.493);
+    transition: background-color 2s;
+}
+
+BUTTON:hover
+{
+    background: #032ad8;
+    background-image: linear-gradient(to bottom, #0041cec7, #0024c29c);
+    text-decoration: none;
+}
+BUTTON:disabled
+{
+    background: #3a3a3b;
+    background-image: linear-gradient(to bottom, #222121c7, #201f1f9c);
+}
+.rodape
+{
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    text-align:center; 
+    float:center; 
+    height:50px; 
+    color:#069; 
+    position:absolute; 
+    background-color:black;
+    margin-bottom: 0px; 
+    width:100%;
+    border-top: solid 1px #069;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.596);
+    bottom: 0;
+    left: 0;
+}
+
+.texto_fundo
+{
+    position: relative;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-top: 10px;
+}
+
+#formulario
+{   
+    height: 100%;
+    width: 20px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+#botao
+{       
+    width: 150px;
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -75px;
+}
+}

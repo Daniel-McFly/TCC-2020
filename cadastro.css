@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/*A regra @charset especifica a codificação de caracteres utilizada na folha de estilo.*/
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+#site, .fundo_site
+{
+    height: 100%;
+}
+
+.fundo_site
+{
+    background-color: black;
+}
+
+.campo
+{   
+    font-size: 25px;
+    color: black;
+    text-shadow: -1px 0 #069, 0 1px #069, 1px 0 #069, 0 -1px #069;
+    width: 130px;
+    float: left;
+}
+
+.interface
+{
+    min-height: 100%;
+    position: relative;
+}
+
+.container
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    /*altura do rodapé tem que ser igual a isso aqui e vice-versa*/
+    padding-bottom: 50px;    
+    height: auto !important;
+}
+
+.titulo 
+{
+    text-align: center;
+    color: black;
+    text-shadow: -1px 0 #069, 0 1px #069, 1px 0 #069, 0 -1px #069;
+    margin-right: center;
+    background: none;
+}
+
+.login
+{
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    border: none ;
+    height: 30px;
+    border: 1px solid #069;
+    width: 300px;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.493);
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    background-color: black;
+}
+
+.rodape
+{
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    text-align:center; 
+    float:center; 
+    height:50px; 
+    color:#069; 
+    position:absolute; 
+    background-color:black;
+    margin-bottom: 0px; 
+    width:100%;
+    border-top: solid 1px #069;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.596);
+    bottom: 0;
+    left: 0;
+}
+
+.texto_fundo
+{
+    position: relative;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.formulario
+{   
+    align-items: center;
+    margin-top: 25px;  
+    color:white;
+    box-sizing: border-box;
+    padding: 35px;
+    width: 80%;    
+    border-radius: 15%;
+    margin-bottom: 25px;
+    height: 550px;    
+    position: absolute;
+    top: 50%;
+    margin: -275px 0 0 0;
+    border: 1px solid #069;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.493);      
+}
+
+.formulario > .campo, .formulario > .login
+{
+    text-align: center;
+    display:block;
+}
+
+#botao
+{       
+    width: 150px;
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -75px;
+    float: center;
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #069;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.493);
+    transition: background-color 2s;
+    background-color: black;
+}
+
+#botao:hover
+{
+    background: #032ad8;
+    background-image: linear-gradient(to bottom, #0041cec7, #0024c29c);
+    text-decoration: none;
+}
+#botao:disabled
+{
+    background: #3a3a3b;
+    background-image: linear-gradient(to bottom, #222121c7, #201f1f9c);
+}
+
+.direita    
+{
+    float: right;
+}
+
+.esquerda   
+{
+    float: left;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .formulario
+    {            
+        position: static;
+        margin: 90px 0 0 0;
+        height: 90%;
+    }
+
+    .direita, .esquerda
+    {
+        float: none;
+        background: none;
+        left: 50%;
+        position: relative;
+        margin: 0 0 0 -220px;
+        width: 440px;
+    }    
+}
+
+@media screen and (max-width: 425px)
+{
+    .container
+    {
+        margin: 0;
+    }
+
+    .formulario
+    {
+        margin: 50px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    .formulario
+    {
+        border: none;
+        box-shadow: none;        
+    }
+
+    .esquerda, .direita
+    {
+        float: none;
+        margin: 0 0 0 -180px;
+        width: 360px;
+    }
+
+    .campo
+    {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 375px)
+{   
+    .formulario
+    {
+        margin: 0;
+    } 
+
+    .esquerda, .direita
+    {
+        width: 250px;
+        margin: 0 0 0 -125px;                        
+    }
+
+    .campo
+    {
+        width:100%;
+        text-align: center;
+    }
+
+    .container
+    {
+        height: 1100px;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 2560px)
+{
+    .titulo, .campo, .rodape
+    {
+        font-size: 30px;
+    }
+
+    .login
+    {
+        font-size: 20px;
+        width: 400px;    
+        height: 40px;
+    }
+
+    #botao
+    {
+        font-size: 40px;
+        width: 220px;
+    }
+
+    .formulario
+    {
+        width: 45%;
+    }
+
+    #vcUF
+    {
+        display: inline;
+        font-size: 30px;        
+    }
+}

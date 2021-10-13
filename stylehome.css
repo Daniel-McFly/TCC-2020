@@ -1,0 +1,409 @@
+/* -------------------------Código comum-------------------------------------*/
+
+/* Customiza para aparecer a seta*/
+.container {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: left;
+
+}
+
+.container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: relative;
+  padding-top: 4%;
+  height: 50%;
+  width: 50%;
+  float: right;
+  background-image:  url(homeimg/seta2.png);
+  background-size: 50px;
+  background-position: right;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+.container input:checked ~ .checkmark {
+  position: relative;
+  padding-top: 18px;
+  height: 35px;
+  float: right;
+  width: 50%;
+  background-image:  url(homeimg/seta1.png);
+  background-size: 45px;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+}
+
+/* Fim da Customização*/
+
+
+
+/* Texto que fica do lado das abas*/
+.Texto{
+  
+  color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: blue;
+  width: 90%;
+  font-size: 30px;/* Linha alterada*/
+}
+
+/* Fim do texto*/
+  /*----Abas---*/
+  #divimg1{
+    display: none;
+   color: blue;
+   border-style: solid;
+   border-color: blue;
+   }
+
+   #divimg2{
+   display: none;
+   color: blue;
+   border-style: solid;
+   border-color: blue;
+   }    
+   
+   #divimg3{
+   display: none;
+   color: blue;
+   border-style: solid;
+   border-color: blue;
+   }
+
+   #divimg4{
+   display: none;
+   color: blue;
+   border-style: solid;
+   border-color: blue;
+   }
+  
+ /*----Fim Abas---*/
+
+ .seleciona:hover{ /*BRILHO*/
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+}
+
+
+
+/*------------------------MOBILE---------------------------------------------------*/
+@media screen and (max-width: 600px){
+   /*----Quadrados---*/
+   .centraliza{
+    padding-left: 0%;;
+   }
+   .pc{
+     display: none;
+   }
+   div.quadrado{
+     width: 90%;
+     height: 250px;
+    background-image: url(homeimg/FEABTA2.png);
+    background-size: 100%;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+   } 
+   div.quadrado:hover{
+    background-image: url(homeimg/feabta.png);
+   } 
+
+   .containericone {
+        height: 0%;
+        width: 0%;
+        float: left;
+     }
+     .containericone .card .imgbx{
+        overflow: hidden;
+        height: 0%;
+        width: 0%;
+    }
+    .containericone .card:hover .imgbx{
+        height: 0%;
+        width: 0px;
+    }
+       .containericone .card .content{
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+    }
+   /*----Fim quadrados---*/
+    #formx{
+       float: right;
+       width: 100%;
+    }
+    .seleciona{
+        color: rgb(219, 219, 219);
+        border-style: solid;
+        border-color: blue;
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .checkmark {
+      position: relative;
+      padding-top: 10%;
+      float: right;  
+    }
+/*----Fim abas---*/
+   
+/* Texto que fica do lado das abas*/
+  .Texto{ 
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: blue;
+    width: 90%;
+    font-size: 25px;
+  }
+  /* Fim do texto*/
+  .suma{
+    display: none;
+  }
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*TABLET*/
+@media screen and (min-width: 600px){
+
+  @media screen and (max-width: 1050px){
+    
+    body{
+      align-content: center;
+    }
+    .pc{
+      display: none;
+    }
+    /*----Quadrados---*/
+    .centraliza{
+     padding-left: 0%;;
+    }
+    div.quadrado{
+      width: 90%;
+      height: 600px;
+     background-image: url(homeimg/FEABTA2.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+    } 
+    div.quadrado:hover{
+     background-image: url(homeimg/feabta.png);
+    } 
+    .containericone {
+display: none;
+      }
+      .containericone .card .imgbx{
+         overflow: hidden;
+         height: 0%;
+         width: 0%;
+     }
+     .containericone .card:hover .imgbx{
+         height: 0%;
+         width: 0px;
+     }
+        .containericone .card .content{
+         font-size: 0px;
+         width: 0%;
+         height: 0%;
+     }
+    /*----Fim quadrados---*/
+ 
+   /*----Abas---*/
+
+   #formx{
+      float: right;
+      width: 100%;
+   }
+   .seleciona{
+       color: rgb(219, 219, 219);
+       border-style: solid;
+       border-color: blue;
+       text-align: left;
+       font-size: 35px;/*----Linha alterada---*/
+   }
+
+   .checkmark {
+    position: relative;
+    padding-top: 4%;
+    height: 50%;
+    width: 50%;
+    float: right;  
+  }
+/*----Fim abas---*/
+
+/* Texto que fica do lado das abas*/
+ .Texto{
+   color: rgb(255, 255, 255);
+   border-style: solid;
+   border-color: blue;
+   width: 90%;
+   font-size: 30px;/* Linha alterada*/
+ }
+}
+ /* Fim do texto*/
+}
+/*----------------------------------------------------------------------------------------*/
+/*Laptop*/
+
+@media screen and (width: 1050px){
+/*SCROLL*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+background-image: linear-gradient(rgb(97, 0, 0), rgb(14, 0, 95));
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+background-image: linear-gradient(red, rgb(38, 0, 255));
+box-shadow: 2px 2px 4px black, 10 10 10 25px blue, 10 10 10 50px darkblue;
+}
+/*----Fim scroll---*/
+}
+/*----------------------------------------------------------------------------------------*/
+/*PC*/
+@media screen and (min-width: 1050px){
+    /*SCROLL*/
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+      
+    ::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(rgb(97, 0, 0), rgb(14, 0, 95));
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-image: linear-gradient(red, rgb(38, 0, 255));
+      box-shadow: 2px 2px 4px black, 10 10 10 25px blue, 10 10 10 50px darkblue;
+    }
+    /*----Fim scroll---*/
+
+      /*----br que não aparece no pc---*/
+ .mobile{
+   display: none;
+ }
+  /*----Fim br que não aparece no pc---*/
+
+/*----Fim MENU---*/
+    
+
+   /*----Quadrados---*/
+   .centraliza{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    margin-top: -450px;
+    z-index: 4;
+   }
+   div.quadrado{
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+    top: 170px;
+    padding-top: 50px;
+    padding-left: 50px;
+   } 
+   div.quadrado:hover{
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 50px darkblue;
+   } 
+   .containericone {
+        height: 100px;
+        width: 100px;
+        float: left;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+     }
+     .containericone:hover {
+        background-color: rgb(0, 0, 117);
+        height: 100px;
+        width: 100px;
+        border-width: 0px;
+        box-shadow: 1px 1px 2px black, 0 0 25px blue;
+     }
+
+     .containericone .card .imgbx{
+        overflow: hidden;
+        height: 100px;
+        width: 100px;
+    }
+    .containericone .card:hover .imgbx{
+        height: 0px;
+        width: 0px;
+    }
+       .containericone .card .content{
+        font-size: 0px;
+    }
+     .containericone .card:hover .content{
+        color: rgb(255, 21, 0);
+        font-size: 22px;
+        height: 100px;
+        width: 100px;
+    }
+   /*----Fim quadrados---*/
+
+   /*----Abas---*/
+
+    #formx{
+       float: right;
+       width: 49%;
+    }
+    .seleciona{
+        color: rgb(219, 219, 219);
+        border-style: solid;
+        border-color: blue;
+        text-align: left;
+        font-size: 25px;
+        padding-left: 0%;       
+    }
+
+/*----Fim abas---*/
+
+/* Texto que fica do lado das abas*/
+  .Texto{
+    float: left;
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: blue;
+    float: left;
+    width: 49%;
+  }
+  /* Fim do texto*/
+
+  /*Rodapé*/
+  
+.rodape
+{
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    text-align:center; 
+    float:center; 
+    height:50px; 
+    color:#069;
+    background-color:black;
+    margin-bottom: 0px; 
+    width:100%;
+    border-top: solid 1px #069;
+    box-shadow: 1px 1px 20px rgba(0, 102, 153, 0.596);
+}
+
+  /* Fim do Rodapé*/
+}
+
+/* Natan Mafra Torres 2020*/
